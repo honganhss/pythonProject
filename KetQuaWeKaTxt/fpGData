@@ -1,0 +1,66 @@
+=== Run information ===
+
+Scheme:       weka.associations.FPGrowth -P 2 -I -1 -N 30 -T 0 -C 0.5 -D 0.05 -U 1.0 -M 0.1
+Relation:     processed_transactions_top_30_products
+Instances:    200000
+Attributes:   30
+              fresh fruits
+              fresh vegetables
+              packaged vegetables fruits
+              yogurt
+              milk
+              packaged cheese
+              water seltzer sparkling water
+              chips pretzels
+              soy lactosefree
+              bread
+              eggs
+              refrigerated
+              frozen produce
+              crackers
+              ice cream ice
+              lunch meat
+              fresh dips tapenades
+              fresh herbs
+              cereal
+              cream
+              juice nectars
+              soft drinks
+              energy granola bars
+              other creams cheeses
+              hot dogs bacon sausage
+              soup broth bouillon
+              nuts seeds dried fruit
+              spreads
+              baking ingredients
+              frozen meals
+=== Associator model (full training set) ===
+
+FPGrowth found 25 rules (displaying top 25)
+
+ 1. [packaged vegetables fruits=t, yogurt=t]: 25582 ==> [fresh fruits=t]: 21158   <conf:(0.83)> lift:(1.49) lev:(0.03) conv:(2.57) 
+ 2. [fresh vegetables=t, yogurt=t]: 28932 ==> [fresh fruits=t]: 23684   <conf:(0.82)> lift:(1.47) lev:(0.04) conv:(2.45) 
+ 3. [fresh vegetables=t, packaged vegetables fruits=t]: 46911 ==> [fresh fruits=t]: 37316   <conf:(0.8)> lift:(1.43) lev:(0.06) conv:(2.17) 
+ 4. [fresh vegetables=t, packaged cheese=t]: 27170 ==> [fresh fruits=t]: 20914   <conf:(0.77)> lift:(1.38) lev:(0.03) conv:(1.93) 
+ 5. [packaged vegetables fruits=t]: 73083 ==> [fresh fruits=t]: 53974   <conf:(0.74)> lift:(1.33) lev:(0.07) conv:(1.7) 
+ 6. [fresh vegetables=t]: 88872 ==> [fresh fruits=t]: 63512   <conf:(0.71)> lift:(1.29) lev:(0.07) conv:(1.56) 
+ 7. [yogurt=t]: 52735 ==> [fresh fruits=t]: 37645   <conf:(0.71)> lift:(1.28) lev:(0.04) conv:(1.55) 
+ 8. [soy lactosefree=t]: 33671 ==> [fresh fruits=t]: 23496   <conf:(0.7)> lift:(1.26) lev:(0.02) conv:(1.47) 
+ 9. [fresh fruits=t, packaged vegetables fruits=t]: 53974 ==> [fresh vegetables=t]: 37316   <conf:(0.69)> lift:(1.56) lev:(0.07) conv:(1.8) 
+10. [bread=t]: 32773 ==> [fresh fruits=t]: 22482   <conf:(0.69)> lift:(1.23) lev:(0.02) conv:(1.41) 
+11. [milk=t]: 48665 ==> [fresh fruits=t]: 32862   <conf:(0.68)> lift:(1.21) lev:(0.03) conv:(1.37) 
+12. [packaged cheese=t]: 46199 ==> [fresh fruits=t]: 31180   <conf:(0.67)> lift:(1.21) lev:(0.03) conv:(1.37) 
+13. [fresh fruits=t, packaged cheese=t]: 31180 ==> [fresh vegetables=t]: 20914   <conf:(0.67)> lift:(1.51) lev:(0.04) conv:(1.69) 
+14. [packaged vegetables fruits=t]: 73083 ==> [fresh vegetables=t]: 46911   <conf:(0.64)> lift:(1.44) lev:(0.07) conv:(1.55) 
+15. [fresh fruits=t, yogurt=t]: 37645 ==> [fresh vegetables=t]: 23684   <conf:(0.63)> lift:(1.42) lev:(0.03) conv:(1.5) 
+16. [chips pretzels=t]: 33887 ==> [fresh fruits=t]: 21260   <conf:(0.63)> lift:(1.13) lev:(0.01) conv:(1.19) 
+17. [packaged cheese=t]: 46199 ==> [fresh vegetables=t]: 27170   <conf:(0.59)> lift:(1.32) lev:(0.03) conv:(1.35) 
+18. [fresh fruits=t, fresh vegetables=t]: 63512 ==> [packaged vegetables fruits=t]: 37316   <conf:(0.59)> lift:(1.61) lev:(0.07) conv:(1.54) 
+19. [water seltzer sparkling water=t]: 38601 ==> [fresh fruits=t]: 22209   <conf:(0.58)> lift:(1.03) lev:(0) conv:(1.05) 
+20. [fresh fruits=t]: 111199 ==> [fresh vegetables=t]: 63512   <conf:(0.57)> lift:(1.29) lev:(0.07) conv:(1.3) 
+21. [fresh fruits=t, yogurt=t]: 37645 ==> [packaged vegetables fruits=t]: 21158   <conf:(0.56)> lift:(1.54) lev:(0.04) conv:(1.45) 
+22. [yogurt=t]: 52735 ==> [fresh vegetables=t]: 28932   <conf:(0.55)> lift:(1.23) lev:(0.03) conv:(1.23) 
+23. [fresh vegetables=t]: 88872 ==> [packaged vegetables fruits=t]: 46911   <conf:(0.53)> lift:(1.44) lev:(0.07) conv:(1.34) 
+24. [milk=t]: 48665 ==> [fresh vegetables=t]: 24943   <conf:(0.51)> lift:(1.15) lev:(0.02) conv:(1.14) 
+25. [packaged vegetables fruits=t]: 73083 ==> [fresh fruits=t, fresh vegetables=t]: 37316   <conf:(0.51)> lift:(1.61) lev:(0.07) conv:(1.39) 
+

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Association Rules Viewer</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    h1 {
+      color: #333;
+    }
+    select,
+    button {
+      padding: 10px;
+      margin: 10px 0;
+      font-size: 16px;
+    }
+    .rules-container {
+      margin-top: 20px;
+    }
+    .rule {
+      background-color: #fff;
+      padding: 10px;
+      border: 1px solid #ccc;
+      margin-bottom: 10px;
+      border-radius: 5px;
+    }
+    .rule-header {
+      font-weight: bold;
+      color: #007bff;
+    }
+    .rule-content {
+      padding: 5px 0;
+    }
+    .rule-confidence {
+      font-weight: bold;
+      color: #28a745;
+    }
+    /* New styles for displaying categories as a list */
+    .category-list {
+      margin-top: 20px;
+      list-style-type: none; /* Remove bullets */
+      padding: 0; /* Remove default padding */
+    }
+
+    .category-item {
+      background-color: #fff;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 10px; /* Space between items */
+      color: #333;
+      font-weight: bold;
+      transition: background-color 0.3s; /* Smooth background change */
+    }
+
+    .category-item:hover {
+      background-color: #e9ecef; /* Change background on hover */
+    }
+  </style>
+</head>
+<body>
+  <h1>KPDL</h1>
+  <!-- Container for displaying all product categories -->
+  <h2>Tất cả các phân loại hàng:</h2>
+  <ul class="category-list" id="categoryList"></ul>
+
+      <!-- Categories will be dynamically added here -->
+
+
+  <!-- Container for displaying rules -->
+  <div class="rules-container" id="rulesContainer">
+
+  </div>
+
+  <!-- Link to JavaScript at the end to ensure HTML loads first -->
+  <script src="index.js"></script>
+</body>
+</html>

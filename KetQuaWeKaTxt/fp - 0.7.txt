@@ -1,0 +1,48 @@
+=== Run information ===
+
+Scheme:       weka.associations.FPGrowth -P 2 -I -1 -N 10 -T 0 -C 0.7 -D 0.05 -U 1.0 -M 0.1
+Relation:     processed_transactions_top_30_products
+Instances:    200000
+Attributes:   30
+              fresh fruits
+              fresh vegetables
+              packaged vegetables fruits
+              yogurt
+              milk
+              packaged cheese
+              water seltzer sparkling water
+              chips pretzels
+              soy lactosefree
+              bread
+              eggs
+              refrigerated
+              frozen produce
+              crackers
+              ice cream ice
+              lunch meat
+              fresh dips tapenades
+              fresh herbs
+              cereal
+              cream
+              juice nectars
+              soft drinks
+              energy granola bars
+              other creams cheeses
+              hot dogs bacon sausage
+              soup broth bouillon
+              nuts seeds dried fruit
+              spreads
+              baking ingredients
+              frozen meals
+=== Associator model (full training set) ===
+
+FPGrowth found 7 rules (displaying top 7)
+
+1. [packaged vegetables fruits=t, yogurt=t]: 25582 ==> [fresh fruits=t]: 21158   <conf:(0.83)> lift:(1.49) lev:(0.03) conv:(2.57) 
+2. [fresh vegetables=t, yogurt=t]: 28932 ==> [fresh fruits=t]: 23684   <conf:(0.82)> lift:(1.47) lev:(0.04) conv:(2.45) 
+3. [fresh vegetables=t, packaged vegetables fruits=t]: 46911 ==> [fresh fruits=t]: 37316   <conf:(0.8)> lift:(1.43) lev:(0.06) conv:(2.17) 
+4. [fresh vegetables=t, packaged cheese=t]: 27170 ==> [fresh fruits=t]: 20914   <conf:(0.77)> lift:(1.38) lev:(0.03) conv:(1.93) 
+5. [packaged vegetables fruits=t]: 73083 ==> [fresh fruits=t]: 53974   <conf:(0.74)> lift:(1.33) lev:(0.07) conv:(1.7) 
+6. [fresh vegetables=t]: 88872 ==> [fresh fruits=t]: 63512   <conf:(0.71)> lift:(1.29) lev:(0.07) conv:(1.56) 
+7. [yogurt=t]: 52735 ==> [fresh fruits=t]: 37645   <conf:(0.71)> lift:(1.28) lev:(0.04) conv:(1.55) 
+
